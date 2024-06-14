@@ -680,13 +680,14 @@ var menu = [];
             $('.leaflet-top').addClass('leaflet-bottom');
             $('.leaflet-top').removeClass('leaflet-top');
 
-        $(document).ready(function(){
-            setTimeout(() => {
-                $('#loader').fadeOut();
-                $('html').css('overflow','scroll');
-            }, "1500");
-           
-        })
+            
+            $( window ).on( "load", function() {
+              $('#loader').fadeOut();
+              $('html').css('overflow','scroll');
+            });
+            
+
+      
     </script>
 </body>
 </html>
