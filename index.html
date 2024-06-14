@@ -453,14 +453,12 @@ a:hover {
     }
 }
  
-   
-
 
     </style>
 </head>
 <body>
     <!-- Loader -->
-     <div style="position: absolute; top:0; width: 100vw; height: 100vh; background-color: transparent; backdrop-filter: blur(15px);" id="loader">
+     <div style="position: absolute; top:0; width: 100vw; height: 100vh; background-color: transparent; backdrop-filter: blur(15px); z-index: 3;" id="loader">
         <div class="gooey">
             <span class="dot"></span>
             <div class="dots">
@@ -469,21 +467,27 @@ a:hover {
               <span></span>
             </div>
         </div>
-     </div>
-   
+     </div> 
     <!-- Loader -->
+
     <div style="width:100vw; height:fit-content; display:flex; flex-direction: column; align-items: center;  background-color: black; color: #F2BE5C ;">
-        <div style="width:100vw; display: flex; justify-content: space-evenly; align-items: center;" class="m-3">
-            <img src="dore2.svg" style="height: 16vh;">
-            <img src="bk.svg" style="height: 25vh;">
-            <img src="dore.svg" style="height: 16vh;">
+      <div style="position: relative;">
+        <div style="position: absolute; top: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(0,0,0,0.99) 0%, rgba(0,0,0,0.938813025210084) 9%, rgba(0,0,0,0.8715861344537815) 18%, rgba(0,0,0,0.5886729691876751) 35%, rgba(0,0,0,0) 56%);">
+
+        </div>
+        <img src="pic.webp" style="width: 100vw;">
+      </div>  
+      <div style="width:100vw; display: flex; justify-content: space-evenly; align-items: center;" class="m-3">
+            <img src="dore2.webp" style="height: 16vh;">
+            <img src="bk.webp" style="height: 25vh;">
+            <img src="dore.webp" style="height: 16vh;">
         </div>
         <h1 style="font-weight: 700; text-align: center; width:90vw; font-size: 25px; margin-top: 1.5rem; color: white;
         border-bottom: 2px solid #F2BE5C;
-        border-radius: 10px;">Peluquería Masculina y Barberia</h1>
+        border-radius: 10px;">Peluquería Barber King</h1>
         <h1 style="font-weight: 700;
         font-size: 18px; margin: 1rem 0; color: white;
-       text-align: center; width:80vw">Lunes a Sábado <br> 10:00 a 14:00 16:00 a 20:30</h1>
+       text-align: center; width:80vw">Lunes a Jueves<br> 9:30 a 14:00, 16:00 a 20:30<br><br>Viernes a Sábado<br> 9:00 a 14:00, 15:30 a 21:00</h1>
        
         <ul>
             <li><span>Corte</span><span>10&#x20AC;</span></li>
